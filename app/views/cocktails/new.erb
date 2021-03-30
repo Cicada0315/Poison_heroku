@@ -1,21 +1,19 @@
-<body class="new">
-    <form class="new_form" action="/cocktails" method="POST">
+<form action="/cocktails" method="POST">
+    <div class="container">
     <h2>Create My Cocktail</h2>
-        <div class="container">
-            <div class="imgcontainer">
-                <img src="/images/cocktail.png" alt="Poison" width="200" height="200">
-            </div>
-            <label for="cocktailname"><b>Cocktail Name: </b></label>
-            <input type="text" name="cocktail[name]" placeholder="name"><br>
-            <label for="glass"><b>Glass: </b></label>
-            <input type="text" name="cocktail[glass]" placeholder="glass"><br>
-            <label for="ingredient"><b>Ingredient: </b></label>
-            <textarea id="ingredient" name="cocktail[ingredient]" placeholder="ingredient"></textarea><br>
-            <label for="instruction"><b>instruction: </b></label>
-            <textarea id="instruction" name="cocktail[instruction]" placeholder="instruction"></textarea><br>
-            <label for="image"><b>image: </b></label>
-            <input type="text" name="cocktail[image]" placeholder="image"><br>
-            <input type="submit" value="Create Cocktail">
+        <div class="text-center">
+            <img src="/images/cocktail.png" class="img-thumbnail" alt="Poison" width="200" height="200">
         </div>
-    </form>
-</body>
+        <label for="cocktailname"><b>Cocktail Name: </b></label>
+        <input type="text" name="cocktail[name]" placeholder="name"><br>
+        <label for="glass"><b>Glass: </b></label>
+        <input type="text" name="cocktail[glass]" placeholder="glass"><br>
+        <label for="ingredient"><b>Ingredient: </b></label>
+        <textarea id="ingredient" name="cocktail[ingredient]" placeholder="ingredient"></textarea><br>
+        <label for="instruction"><b>instruction: </b></label>
+        <textarea id="instruction" name="cocktail[instruction]" placeholder="instruction"></textarea><br>
+        <label for="image"><b>image: </b></label>
+        <input type="text" name="cocktail[image]" placeholder="image"><br>
+        <input type="submit" value="Create Cocktail">
+    </div>
+</form>
