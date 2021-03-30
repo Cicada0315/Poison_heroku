@@ -3,8 +3,8 @@
     <h3>Glass: <%= @cocktail.glass %></h3>
     <h3>Ingredient: </h3>
         <%ingre=@cocktail.ingredient.split(",")%> 
-        <%ingre.each do |in|%>
-        <h3><%= in %></h3>
+        <%ingre.each do |ing|%>
+        <h3><%= ing %></h3>
         <%end%>
     <h3>Instruction: <%= @cocktail.instruction %></h3>
 
