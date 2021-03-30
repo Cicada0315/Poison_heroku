@@ -21,14 +21,13 @@ class ApplicationController < Sinatra::Base
     get '/result' do
         exsist=(1..415).to_a 
         @cocktail = Cocktail.find_by(name: params[:name])
-        if @cocktail==nil && !logged_in?
+        if @cocktail.empty? && !logged_in?
             flash[:error] = "There is no such a cocktail under that name in our website, why don't you try to create one?"
             redirect "/login"
-        elsif @cocktail!=nil && !logged_in? && !exsist.include?(@cocktail.id)
+        elsif !@cocktail.empty? && !logged_in? && !exsist.include?(@cocktail.id)
             flash[:error] = "You don't have access for this cocktail. This cocktail is belong to another user, why don't you try to create one for yourself?"
             redirect "/login"
         elsif @cocktail==nil && logged_in?
-            binding.pry
             flash[:error] = "There is no such a cocktail under that name in our website, why don't you try to create one?"
             redirect '/cocktails/new'
         else
