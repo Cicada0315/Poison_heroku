@@ -5,6 +5,7 @@
         <%ingre=@cocktail.ingredient.split(",")%> 
         <%ingre.each do |in|%>
         <h3><%= in %></h3>
+        <%end%>
     <h3>Instruction: <%= @cocktail.instruction %></h3>
 
     <% if logged_in? && current_user.id==@cocktail.user_id%>
