@@ -1,7 +1,7 @@
 <form action="/login" method="post">
     <div class="container" id="new">
         <div class="text-center">
-            <img src="/images/poison-large.png" class="img-fluid" alt="Poison">
+            <img src="/images/poison-large.png" class="img-thumbnail" alt="Poison">
         </div>
         <label for="uname"><b>Username(email)</b></label>
         <input type="email" placeholder="Enter your email" name="user[email]" required>
@@ -9,8 +9,9 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="user[password]" required>
 
-        <button class="signuplogin_botton" type="submit">Login</button>
+        <button class="text-white bg-dark" type="submit">Login</button>
+        <a href="/signup">Create account</a>
     </div>
-    <a href="/signup">Create account</a>
+    
 </form>
 
