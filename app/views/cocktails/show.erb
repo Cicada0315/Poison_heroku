@@ -1,14 +1,20 @@
     <h1><%= @cocktail.name %></h1>
     <img src="<%=@cocktail.image%>" class="img-fluid" alt="<%=@cocktail.name%>">
+    <div id="containerIntro">
     <h3>Glass: </h3>
     <p><%= @cocktail.glass %></p>
+    </div>
+    <div id="containerIntro">
     <h3>Ingredient: </h3>
         <%ingre=@cocktail.ingredient.split(",")%> 
         <%ingre.each do |ing|%>
         <p><%= ing %></p>
         <%end%>
+    </div>
+    <div id="containerIntro">
     <h3>Instruction: </h3>
     <p><%= @cocktail.instruction %></p>
+    </div>
 
     <% if logged_in? && current_user.id==@cocktail.user_id%>
         <form action="/cocktails/<%= @cocktail.id %>/edit" method="get">

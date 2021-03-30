@@ -21,3 +21,8 @@ input[type=email], input[type=password], input[type=date], input[type=text], tex
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+#containerIntro h1, #containerIntro p {
+    display: inline;
+    vertical-align: top;
+}
