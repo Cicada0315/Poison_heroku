@@ -20,3 +20,15 @@ input[type=email], input[type=password], input[type=date], input[type=text], tex
     padding: 16px;
     background-color: white;
 }
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+.signuplogin_form{
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+}
