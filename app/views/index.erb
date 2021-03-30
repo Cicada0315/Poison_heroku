@@ -1,12 +1,16 @@
-<body class="all">
 <h1>Cocktails</h1>
-<table class="container">
+    <table class="container">
     <% @cocktails.each do |cocktail| %>
-        <% if cocktail.id <= 415 %>
-            <a href="/cocktails/<%= cocktail.id %>">
-            <img src="<%=cocktail.image%>" class="img-thumbnail" alt="<%=cocktail.name%>" width="120" height="120">
-            </a>
+        <% if cocktail.id <= 415 && cocktail.id%9!=0 %>
+            <td>
+                <a href="/cocktails/<%= cocktail.id %>">
+                <img src="<%=cocktail.image%>" class="img-thumbnail" alt="<%=cocktail.name%>" width="120" height="120">
+                </a>
+                <div class="nameofcocktail"><%=cocktail.name%></div>
+            </td>
+        <%else%>
+            <tr>
+            </tr>
         <% end %>
     <% end %>
 </table>
-</body>
