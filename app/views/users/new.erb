@@ -1,25 +1,16 @@
-<body class="signuplogin">
-    <form class="signuplogin_form" action="/signup" method="post">
-        <div class="container">
-            <div class="imgcontainer">
-                <img src="/images/poison.jpeg" alt="Poison" width="200" height="200">
-            </div>
-            <label for="name"><b>name</b></label>
-            <input type="text" placeholder="Enter your name" name="user[name]" required>
-
-            <label for="birthday"><b>birthday</b></label>
-            <input type="date" placeholder="Enter your birthday" name="user[birthday]" required>
-
-            <label for="uname"><b>Username(email)</b></label>
-            <input type="email" placeholder="Enter your email" name="user[email]" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="user[password]" required>
-
-            <label for="psw confrim"><b>Confirm Password</b></label>
-            <input type="password" placeholder="password confirmation" name="user[password_confirmation]" required>
-
-            <button class="signuplogin_botton" type="submit">Signup</button>
-        </div>
-    </form>
-</body>
+<form>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
