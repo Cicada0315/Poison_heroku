@@ -23,9 +23,5 @@ input[type=email], input[type=password], input[type=date], input[type=text], tex
 }
 
 #containerIntro h1, #containerIntro p {
-    display: inline;
-    vertical-align: top;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 28px;
+    display: inline-block;
 }
