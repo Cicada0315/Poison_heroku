@@ -1,0 +1,26 @@
+<body class="show">
+    <h1><%= @cocktail.name %></h1>
+    <img src="<%=@cocktail.image%>" alt="<%=@cocktail.name%>">
+    <h3>Glass: <%= @cocktail.glass %></h3>
+    <h3>Ingredient: <%= @cocktail.ingredient %></h3>
+    <h3>Instruction: <%= @cocktail.instruction %></h3>
+
+    <% if logged_in? && current_user.id==@cocktail.user_id%>
+        <form action="/cocktails/<%= @cocktail.id %>/edit" method="get">
+            <input type="submit" value="Edit Cocktail">
+        </form>
+        <form action="/cocktails/<%= @cocktail.id %>" method="post">
+            <input type="hidden" name="_method" value="delete"> 
+            <input type="submit" value="Delete Cocktail">
+        </form>
+    <%elsif logged_in? && current_user.id!=@cocktail.user_id %>
+        <form action="/cocktails" method="post">
+            <input type="hidden" name="cocktail[name]" value="<%=@cocktail.name%>">
+            <input type="hidden" name="cocktail[glass]" value="<%=@cocktail.glass%>">
+            <input type="hidden" name="cocktail[ingredient]" value="<%=@cocktail.ingredient%>">
+            <input type="hidden" name="cocktail[instruction]" value="<%=@cocktail.instruction%>">
+            <input type="hidden" name="cocktail[image]" value="<%=@cocktail.image%>">
+            <input type="submit" value="Add Cocktail to my list">
+        </form>
+    <%end%>
+</body>

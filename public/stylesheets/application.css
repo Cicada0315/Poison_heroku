@@ -1,0 +1,118 @@
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    color: white;
+}
+
+.nav-link{
+    color: white;    
+}
+
+.nav-bar{
+    background-color: #202020;
+}
+
+.welcome{
+    background-image: url("../images/lisheng-chang-FvA7zYUVIdA-unsplash.jpg");
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.all{
+    background-color: black;
+    text-align: center;
+}
+
+.nameofcocktail{
+    color: white;
+}
+
+.new{
+    background-color: black;
+    text-align: center;
+}
+
+.edit{
+    background-color: black;
+    text-align: center;
+}
+
+.show{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*for login & signup*/
+.signuplogin{
+    background-color:black;
+    text-align: center;
+}
+  
+/* Full-width inputs */
+input[type=email], input[type=password], input[type=date], input[type=text], textarea[id=ingredient], textarea[id=instruction]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+/* Set a style for all buttons */
+.signuplogin_botton{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.7;
+}
+    
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+.new_form{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+}
+
+.signuplogin_form{
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+}
+
+.edit_form{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+}

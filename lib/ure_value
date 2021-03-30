@@ -1,0 +1,31 @@
+
+[1mFrom:[0m /mnt/c/Users/Jeanne/Desktop/Flatiron/code/phase2-project/Poison/lib/cocktail_data.rb:24 CocktailData#initialize:
+
+     [1;34m4[0m: [32mdef[0m [1;34minitialize[0m(cocktail_hash)
+     [1;34m5[0m:     ingredient_with_measure=[]
+     [1;34m6[0m:     ingredient_value=[]
+     [1;34m7[0m:     measure_value=[]
+     [1;34m8[0m:     cocktail_hash.each [32mdo[0m  |key, value|
+     [1;34m9[0m:         ingredient=[[31m[1;31m"[0m[31mstrIngredient1[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mstrIngredient2[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mstrIngredient3[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient4[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient5[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient6[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient7[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient8[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient9[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient10[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient11[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient12[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient13[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient14[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrIngredient15[1;31m"[0m[31m[0m]
+    [1;34m10[0m:         measure=[[31m[1;31m"[0m[31mstrMeasure1[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mstrMeasure2[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mstrMeasure3[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure4[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure5[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure6[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure7[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure8[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure9[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure10[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure11[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure12[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure13[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure14[1;31m"[0m[31m[0m,[31m[1;31m"[0m[31mstrMeasure15[1;31m"[0m[31m[0m]
+    [1;34m11[0m:         [32mif[0m key==[31m[1;31m"[0m[31mstrDrink[1;31m"[0m[31m[0m || key==[31m[1;31m"[0m[31mstrGlass[1;31m"[0m[31m[0m ||key==[31m[1;31m"[0m[31mstrInstructions[1;31m"[0m[31m[0m ||key==[31m[1;31m"[0m[31mstrDrinkThumb[1;31m"[0m[31m[0m
+    [1;34m12[0m:             [1;36mself[0m.class.attr_accessor(key)
+    [1;34m13[0m:             [1;36mself[0m.send([31m[1;31m"[0m[31m#{key}[0m[31m=[1;31m"[0m[31m[0m, value)
+    [1;34m14[0m:         [32melsif[0m ingredient.include?(key)
+    [1;34m15[0m:             [32mif[0m !key.empty?
+    [1;34m16[0m:                 ingredient_value << value
+    [1;34m17[0m:             [32mend[0m
+    [1;34m18[0m:         [32melsif[0m measure.include?(key)
+    [1;34m19[0m:             [32mif[0m !key.empty?
+    [1;34m20[0m:                 measure_value << value
+    [1;34m21[0m:             [32mend[0m
+    [1;34m22[0m:         [32mend[0m
+    [1;34m23[0m:     [32mend[0m
+ => [1;34m24[0m:     binding.pry
+    [1;34m25[0m:     ingredient_value.each_with_index [32mdo[0m |value, index|
+    [1;34m26[0m:         ingredient_with_measure << [31m[1;31m"[0m[31m#{value}[0m[31m = #{measure_value[index]}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m27[0m:     [32mend[0m
+    [1;34m28[0m:     @ingredient=ingredient_with_measure
+    [1;34m29[0m:     [36m@@all[0m << [1;36mself[0m
+    [1;34m30[0m: [32mend[0m
+

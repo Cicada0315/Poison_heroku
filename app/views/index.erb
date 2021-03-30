@@ -1,0 +1,12 @@
+<body class="all">
+<h1>Cocktails</h1>
+<table class="container">
+    <% @cocktails.each do |cocktail| %>
+        <% if cocktail.id <= 415 %>
+            <a href="/cocktails/<%= cocktail.id %>">
+            <img src="<%=cocktail.image%>" class="img-thumbnail" alt="<%=cocktail.name%>" width="120" height="120">
+            </a>
+        <% end %>
+    <% end %>
+</table>
+</body>

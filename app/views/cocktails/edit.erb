@@ -1,0 +1,23 @@
+<body class="edit">
+    
+    <form class="edit_form" action="/cocktails/<%= @cocktail.id %>" method="POST">
+    <input type="hidden" name="_method" value="patch">
+    <h2>EDIT My Cocktail</h2>
+    <div class="container">
+            <div class="imgcontainer">
+                <img src="/images/poison.jpeg" alt="Poison" width="200" height="200">
+            </div>
+            <label for="cocktailname"><b>Cocktail Name: </b></label>
+            <input type="text" name="cocktail[name]" value="<%= @cocktail.name %>"><br>
+            <label for="glass"><b>Glass: </b></label>
+            <input type="text" name="cocktail[glass]" value="<%= @cocktail.glass %>"><br>
+            <label for="ingredient"><b>Ingredient: </b></label>
+            <textarea id="ingredient" name="cocktail[ingredient]"><%= @cocktail.ingredient %></textarea><br>
+            <label for="instruction"><b>instruction: </b></label>
+            <textarea id="instruction" name="cocktail[instruction]"><%= @cocktail.instruction %></textarea><br>
+            <input type="text" name="cocktail[image]" value="<%= @cocktail.image %>"><br>
+            <input type="submit" value="Update Cocktail">
+        </div>
+    </form>
+</body>
+

@@ -1,0 +1,12 @@
+<body class="all">
+    <h3>My Cocktails</h3>
+    <%if !@cocktails.empty?%>
+        <% @cocktails.each do |cocktail| %>
+            <a href="/cocktails/<%= cocktail.id %>">
+                <h4> <%= cocktail.name %> </h4>
+            </a>    
+        <% end %>
+    <%else %>
+       <h3><a class="create" href="/cocktails/new">My cocktails is empty, why don't you add one?</a></h3>
+    <% end %>   
+</body>
