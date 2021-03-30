@@ -1,5 +1,6 @@
 <h1>Cocktails</h1>
-    <table class="container">
+<div class="container">
+    <table>
     <% @cocktails.each do |cocktail| %>
         <% if cocktail.id <= 415 %>
             <a href="/cocktails/<%= cocktail.id %>">
@@ -8,3 +9,4 @@
         <% end %>
     <% end %>
 </table>
+</div>

@@ -35,7 +35,6 @@ class CocktailController < ApplicationController
     end
 
     patch '/cocktails/:id' do
-        redirect_if_not_logged_in
         redirect_if_not_authorized
         
         if @cocktail.update(params["cocktail"])
