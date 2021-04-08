@@ -22,6 +22,12 @@ input[type=email], input[type=password], input[type=date], input[type=text], tex
     box-sizing: border-box;
 }
 
-#containerIntro {
-    
+#showpage{
+    padding-top:100px;
+    text-align: left;
+}
+
+#showimage{
+    padding-right:100px;
+    float: left;
 }

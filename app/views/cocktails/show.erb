@@ -1,22 +1,21 @@
-    <h1><%= @cocktail.name %></h1>
-    
-    <div id="containerIntro">
-    <div class="float-left"><img src="<%=@cocktail.image%>" class="rounded float-left" alt="<%=@cocktail.name%>"></div>
-    <h3>Glass: </h3>
-    <p><%= @cocktail.glass %></p>
+<div class="container">
+    <h1><%= @cocktail.name %></h1><br>
+    <div id=showimage>
+    <img src="<%=@cocktail.image%>" alt="<%=@cocktail.name%>">
     </div>
-    <div id="containerIntro">
-    <h3>Ingredient: </h3>
-        <ul>
+    
+    <div id="showpage">
+        <h3>Glass: </h3>
+        <p><%= @cocktail.glass %></p>
+    
+        <h3>Ingredient: </h3>
         <%ingre=@cocktail.ingredient.split(",")%> 
         <%ingre.each do |ing|%>
-        <li><%= ing %></li>
+            <p><%= ing %></p>
         <%end%>
-        </ul>
-    </div>
-    <div id="containerIntro">
-    <h3>Instruction: </h3>
-    <p><%= @cocktail.instruction %></p>
+    
+        <h3>Instruction: </h3>
+        <p><%= @cocktail.instruction %></p>
     </div>
 
     <% if logged_in? && current_user.id==@cocktail.user_id%>
@@ -37,3 +36,4 @@
             <input type="submit" value="Add Cocktail to my list">
         </form>
     <%end%>
+</div>
