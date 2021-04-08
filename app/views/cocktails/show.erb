@@ -1,9 +1,6 @@
 <div class="container">
     <h1><%= @cocktail.name %></h1><br>
-    <div id=showimage>
-    <img src="<%=@cocktail.image%>" alt="<%=@cocktail.name%>">
-    </div>
-    
+    <img style="float:left" src="<%=@cocktail.image%>" class="img-thumbnail" alt="<%=@cocktail.name%>">
     <div id="showpage">
         <h3>Glass: </h3>
         <p><%= @cocktail.glass %></p>
