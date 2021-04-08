@@ -6,10 +6,12 @@
     </div>
     <div id="containerIntro">
     <h3>Ingredient: </h3>
+        <ul>
         <%ingre=@cocktail.ingredient.split(",")%> 
         <%ingre.each do |ing|%>
-        <p><%= ing %></p>
+        <li><%= ing %></li>
         <%end%>
+        </ul>
     </div>
     <div id="containerIntro">
     <h3>Instruction: </h3>
