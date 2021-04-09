@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
         erb :about
     end
 
-    get '/all' do
+    get '/index' do
         @cocktails=Cocktail.all
         erb :index
     end
