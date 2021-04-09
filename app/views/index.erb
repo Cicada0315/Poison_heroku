@@ -1,12 +1,19 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 <h1>Cocktails</h1>
 <div class="container">
-    <table>
-    <% @cocktails.each do |cocktail| %>
-        <% if cocktail.id <= 415 %>
-            <a href="/cocktails/<%= cocktail.id %>">
-                <img src="<%=cocktail.image%>" class="img-thumbnail" alt="<%=cocktail.name%>" width="120" height="120">
-            </a>
+    <div class="row text-center">
+        <% @cocktails.each do |cocktail| %>
+            <% if cocktail.id <= 415 %>
+                <div class="col-xs-2">
+                    <figure>
+                    <a href="/cocktails/<%= cocktail.id %>">
+                        <img src="<%=cocktail.image%>" class="img-thumbnail" alt="<%=cocktail.name%>" width="120" height="120">
+                    </a>
+                    <figcaption><%= cocktail.name %></figcaption>
+                    </figure>
+                </div>
+            <% end %>
         <% end %>
-    <% end %>
-</table>
+    </div>
 </div>
+
